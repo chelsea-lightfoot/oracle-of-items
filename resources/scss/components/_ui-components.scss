@@ -1,0 +1,23 @@
+.button {
+  &.run-gen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+
+    background-image: url("../images/ui-assets/run-1.jpg");
+    background-position: bottom center;
+    background-size: cover;
+
+    font-family: $body-reg;
+    font-size: $base-font-size;
+    color: $light-text-color;
+
+    &:hover {
+      background-image: url("../images/ui-assets/run-3.jpg");
+    }
+  }
+}
