@@ -1,0 +1,49 @@
+//TODO
+//
+//  1. replace "url(#a) from defs with radial gradient
+//  2. transfer all colors into variables
+//  3. transfer stroke miter and width to variables
+
+.gacha {
+  max-width: 1000px;
+  .gacha-back {
+    fill: #962faf;
+  }
+  .ball-back {
+    fill: #7ae6d6;
+    fill-opacity: 0.7000000000000001;
+    stroke: #7ae6d6;
+    stroke-miterlimit: 10;
+    stroke-width: 15px;
+  }
+  .item-ball {
+    circle {
+      fill: #009faf;
+      stroke: #332c8a;
+      stroke-miterlimit: 10;
+      stroke-width: 15px;
+    }
+    path {
+      fill: none;
+      stroke: #2b1881;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 15px;
+    }
+  }
+  .ball-front {
+    fill-opacity: 0.8;
+    stroke: #7ae6d6;
+    stroke-miterlimit: 10;
+    stroke-width: 15px;
+    fill: url(#a); //this is where I need to put the radial gradient
+  }
+  .strut {
+    .top {
+      fill: #a642c4;
+    }
+    .bottom {
+      fill: #962faf;
+    }
+  }
+}
