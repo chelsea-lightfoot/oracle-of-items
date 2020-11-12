@@ -1,14 +1,21 @@
 //TODO
 //
-//  1. replace "url(#a) from defs with radial gradient
-//  2. transfer all colors into variables
-//  3. transfer stroke miter and width to variables
+//  1. reorganize groups
+//  2. replace "url(#a) from defs with radial gradient
+//  3. transfer all colors into variables
+//  4. transfer stroke miter and width to variables
+//  5. simplify classes: merge shadows and shading
 
 .gacha {
   max-width: 1000px;
+  .gacha-ball {
+
+  }
+
   .gacha-back {
     fill: #962faf;
   }
+
   .ball-back {
     fill: #7ae6d6;
     fill-opacity: 0.7000000000000001;
@@ -16,6 +23,7 @@
     stroke-miterlimit: 10;
     stroke-width: 15px;
   }
+
   .item-ball {
     circle {
       fill: #009faf;
@@ -31,6 +39,7 @@
       stroke-width: 15px;
     }
   }
+
   .ball-front {
     fill-opacity: 0.8;
     stroke: #7ae6d6;
@@ -38,12 +47,123 @@
     stroke-width: 15px;
     fill: url(#a); //this is where I need to put the radial gradient
   }
+
   .strut {
     .top {
       fill: #a642c4;
     }
     .bottom {
       fill: #962faf;
+    }
+  }
+
+  .gacha-shadow {
+    fill: #962faf;
+  }
+
+  .gacha-base{
+    fill: #bb50d9;
+  }
+
+  .turn-plate {
+    .plate-shadow {
+      fill: #962faf;
+    }
+    .plate {
+      fill: #a642c4;
+    }
+  }
+
+  .gacha-handle {
+    .handle {
+      fill: #f9b424;
+    }
+    .handle-shading {
+      fill: #f6970e;
+    }
+    .handle-shadow {
+      fill: #962faf;
+    }
+  }
+
+
+  .coin-slot {
+    .slot-shadow {
+      fill: #6b0dad;
+    }
+    .slot {
+      fill: #962faf;
+    }
+    .curls {
+      .curl-shadows {
+        fill: #962faf;
+        .dark {
+          fill: #6b0dad;
+        }
+      }
+      .curl {
+        fill: #fdd761;
+      }
+    }
+  }
+
+
+  .ball-drop {
+    .drop-shading {
+      fill: #962faf;
+    }
+    .drop {
+      fill: #6b0dad;
+    }
+    .curls {
+      .curl-shadows {
+        fill: #a642c4;
+      }
+      .curl {
+        fill: #fdd761;
+        &.dark {
+          fill: #f9b424;
+        }
+      }
+    }
+  }
+
+  .dragon {
+    .dragon-body {
+      fill: #f9b424;
+    }
+    .dragon-shading {
+      fill: #f6970e;
+    }
+    .dragon-eye {
+      fill: #fdd761;
+    }
+  }
+
+  .curls {
+    .curl-shadows {
+      fill: #a642c4;
+    }
+    .curl-shading {
+      fill: #f9b424;
+    }
+    .curl {
+      fill: #fdd761;
+    }
+  }
+
+  .feet {
+    .foot {
+      fill: #a642c4;
+    }
+    .foot-shadows {
+      fill: #962faf;
+    }
+    .foot-curl {
+      fill: #f9b424;
+      &.dark {
+        fill: #f6970e;
+      }
     }
   }
 }
