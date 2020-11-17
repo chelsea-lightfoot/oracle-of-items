@@ -1,6 +1,6 @@
 //TODO
 //
-//  1. reorganize groups
+//
 //  2. replace "url(#a) from defs with radial gradient
 //  3. transfer all colors into variables
 //  4. transfer stroke miter and width to variables
@@ -165,5 +165,139 @@
         fill: #f6970e;
       }
     }
+  }
+}
+
+.coins {
+  .main-coin {
+    max-width: 470px;
+    .edge {
+      fill: #fdd761;
+    }
+    .face {
+      fill: #f9b424;
+    }
+    .shadow {
+      fill: #f6970e;
+    }
+    .numbers {
+      line {
+        fill: none;
+        stroke: #f9b424;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    }
+    .icon {
+      path {
+        fill: #f6970e;
+      }
+    }
+  }
+  .coin-stack {
+    max-width: 470px;
+    .coin {
+      fill: #f6970e;
+    }
+    .shadow {
+      fill: #f9b424;
+    }
+    .ridge {
+      fill: #fdd761;
+      opacity: 0.4;
+    }
+
+  }
+}
+
+.item-chest {
+  max-width: 1000px;
+  .lid {
+    .divider {
+      fill: #962faf;
+    }
+    .base {
+      fill: #bb50d9;
+    }
+    .inset {
+      fill: #a642c4;
+    }
+    .fluff {
+      fill: #bb50d9;
+    }
+    .fluff-shadow {
+      fill: #a642c4;
+      &.dark {
+        fill: #962faf;
+      }
+    }
+    .lock {
+      .face {
+        fill: #f9b424;
+      }
+      .face-shading {
+        fill: #f6970e;
+      }
+      .keyhole {
+        fill: #6b0dad;
+      }
+      .keyhole-shading {
+        fill: #962faf;
+      }
+      .hinge {
+        fill: #f9b424;
+      }
+      .hinge-shading {
+        fill: #f6970e;
+      }
+    }
+    .curls {
+      .curl {
+        fill: #f9b424;
+      }
+      .curl-shading {
+        fill: #f6970e;
+      }
+      .curl-shadows {
+        fill: #962faf;
+      }
+    }
+  }
+  .box {
+    .face {
+      fill: #bb50d9;
+    }
+    .top-edge {
+      fill: #a642c4;
+    }
+    .inset {
+      fill: #a642c4;
+    }
+    .fluff {
+      fill: #bb50d9;
+    }
+    .fluff-shadow {
+      fill: #a642c4;
+      &.dark {
+        fill: #962faf;
+      }
+    }
+    .inside {
+      fill: #6b0dad;
+      &.back {
+        opacity: 0.8;
+      }
+    }
+    .inside-shadow {
+      fill: url(#a); //this is where I need to put the radial gradient
+    }
+  }
+}
+.key {
+  max-width: 470px;
+  fill: #fdd761;
+  .shading {
+    fill: #f9b424;
   }
 }
