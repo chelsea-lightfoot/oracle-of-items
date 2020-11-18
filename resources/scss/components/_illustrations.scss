@@ -8,44 +8,42 @@
 
 .gacha {
   max-width: 1000px;
-  .gacha-ball {
+  .crystal-ball {
+    .ball-back {
+      fill: #7ae6d6;
+      fill-opacity: 0.7000000000000001;
+      stroke: #7ae6d6;
+      stroke-miterlimit: 10;
+      stroke-width: 15px;
+    }
 
+    .gacha-ball {
+      circle {
+        fill: #009faf;
+        stroke: #332c8a;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
+      }
+      path {
+        fill: none;
+        stroke: #2b1881;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
+      }
+    }
+
+    .ball-front {
+      fill-opacity: 0.8;
+      stroke: #7ae6d6;
+      stroke-miterlimit: 10;
+      stroke-width: 15px;
+      fill: url(#a); //this is where I need to put the radial gradient
+    }
   }
 
   .gacha-back {
     fill: #962faf;
-  }
-
-  .ball-back {
-    fill: #7ae6d6;
-    fill-opacity: 0.7000000000000001;
-    stroke: #7ae6d6;
-    stroke-miterlimit: 10;
-    stroke-width: 15px;
-  }
-
-  .item-ball {
-    circle {
-      fill: #009faf;
-      stroke: #332c8a;
-      stroke-miterlimit: 10;
-      stroke-width: 15px;
-    }
-    path {
-      fill: none;
-      stroke: #2b1881;
-      stroke-linecap: round;
-      stroke-miterlimit: 10;
-      stroke-width: 15px;
-    }
-  }
-
-  .ball-front {
-    fill-opacity: 0.8;
-    stroke: #7ae6d6;
-    stroke-miterlimit: 10;
-    stroke-width: 15px;
-    fill: url(#a); //this is where I need to put the radial gradient
   }
 
   .strut {
@@ -181,12 +179,12 @@
       fill: #f6970e;
     }
     .numbers {
-      line {
-        fill: none;
-        stroke: #f9b424;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 2px;
+      path {
+        fill: #f9b424;
+        //stroke: #f9b424;
+        //stroke-linecap: round;
+        //stroke-linejoin: round;
+        //stroke-width: 2px;
       }
     }
     .icon {
@@ -208,6 +206,77 @@
       opacity: 0.4;
     }
 
+  }
+}
+
+.search-glass {
+  .glass-back {
+    fill: #2b1881;
+  }
+  .gacha-reflection {
+    .shadow {
+      fill: #19122f;
+      opacity: 0.5;
+    }
+    .shading {
+      fill: #962faf;
+    }
+    .base {
+      fill: #bb50d9;
+    }
+    .strut {
+      fill: #fdd761;
+    }
+    .foot {
+      fill: #a642c4;
+    }
+    .curl {
+      fill: #f9b424;
+      &.dark {
+        fill: #f6970e;
+      }
+    }
+  }
+  .lens {
+    fill: #7ae6d6;
+    fill-opacity: 0.8;
+  }
+  .rim-shading {
+    fill: none;
+    stroke: #962faf;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+  }
+  .handle-shading {
+    fill: #962faf;
+  }
+  .lens-gradient {
+    fill-opacity: 0.7000000000000001;
+    fill: url(#a);
+  }
+  .rim {
+    fill: none;
+    stroke: #bb50d9;
+    stroke-miterlimit: 9.99999969976006;
+    stroke-width: 30px;
+  }
+  .lens-glare {
+    fill: #7ae6d6;
+    opacity: 0.7000000000000001;
+  }
+  .handle {
+    fill: #bb50d9;
+  }
+  .curls {
+    .shadow {
+      fill: #a642c4;
+    }
+    .shading {
+      fill: #f9b424;
+    }
+    .curl {
+      fill: #fdd761;
+    }
   }
 }
 
@@ -294,9 +363,12 @@
     }
   }
 }
-.key {
+
+.chest-key {
   max-width: 470px;
-  fill: #fdd761;
+  .key {
+    fill: #fdd761;
+  }
   .shading {
     fill: #f9b424;
   }
