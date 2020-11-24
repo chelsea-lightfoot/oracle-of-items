@@ -6,6 +6,22 @@
 //  4. transfer stroke miter and width to variables
 //  5. simplify classes: merge shadows and shading
 
+.smoke {
+  fill: #e9e0ff;
+  &.smoke-1 {
+    max-width: 1823px;
+  }
+  &.smoke-2 {
+    max-width: 1024px;
+  }
+  &.smoke-3 {
+    max-width: 326px;
+  }
+  &.smoke-4 {
+    max-width: 384px;
+  }
+}
+
 .gacha {
   max-width: 1000px;
   .crystal-ball {
@@ -178,19 +194,52 @@
     .shadow {
       fill: #f6970e;
     }
-    .numbers {
+    .icons {
       path {
+        fill: #f6970e;
+      }
+      .oracle {display: block;}
+      .barbarian {display: none;}
+      .bard {display: none;}
+      .cleric {display: none;}
+      .druid {display: none;}
+      .fighter {display: none;}
+      .monk {display: none;}
+      .paladin {display: none;}
+      .ranger {display: none;}
+      .rogue {display: none;}
+      .sorcerer {display: none;}
+      .warlock {display: none;}
+      .wizard {display: none;}
+    }
+    .numbers {
+      path, rect {
         fill: #f9b424;
         //stroke: #f9b424;
         //stroke-linecap: round;
         //stroke-linejoin: round;
         //stroke-width: 2px;
       }
-    }
-    .icon {
-      path {
-        fill: #f6970e;
-      }
+      .one {display: block;}
+      .two {display: none;}
+      .three {display: none;}
+      .four {display: none;}
+      .five {display: none;}
+      .six {display: none;}
+      .seven {display: none;}
+      .eight {display: none;}
+      .nine {display: none;}
+      .ten {display: none;}
+      .eleven {display: none;}
+      .twelve {display: none;}
+      .thirteen {display: none;}
+      .fourteen {display: none;}
+      .fifteen {display: none;}
+      .sixteen {display: none;}
+      .seventeen {display: none;}
+      .eighteen {display: none;}
+      .nineteen {display: none;}
+      .twenty {display: none;}
     }
   }
   .coin-stack {
@@ -371,5 +420,30 @@
   }
   .shading {
     fill: #f9b424;
+  }
+}
+
+.shadows {
+  max-width: 5780px;
+  fill: #19122f;
+  opacity: 0.2;
+  .dark {
+    opacity: 0.5;
+  }
+}
+
+.background {
+  max-width: 6844px;
+  stroke: #009faf;
+  stroke-linejoin: round;
+  stroke-width: 15px;
+  .dark {
+    fill: #2b1881;
+  }
+  .light {
+    fill: #332c8a;
+  }
+  .no-fill {
+    fill: none;
   }
 }
