@@ -4,15 +4,19 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  //overflow: hidden;
+  overflow: hidden;
 }
 
 main {
   flex: 1;
   max-width: 100vw;
-  padding: $base-space;
   section {
-
+    width: 100%;
+    height: auto;
+    position: absolute;
+    svg {
+      display: block;
+    }
   }
   @media only screen and (max-width: 880px) {
     section {

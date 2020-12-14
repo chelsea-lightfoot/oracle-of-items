@@ -6,6 +6,7 @@
 //  4. transfer stroke miter and width to variables
 //  5. simplify classes: merge shadows and shading
 
+
 .smoke {
   fill: #e9e0ff;
   &.smoke-1 {
@@ -433,17 +434,22 @@
 }
 
 .background {
-  max-width: 6844px;
-  stroke: #009faf;
-  stroke-linejoin: round;
-  stroke-width: 15px;
-  .dark {
-    fill: #2b1881;
-  }
-  .light {
-    fill: #332c8a;
-  }
-  .no-fill {
-    fill: none;
+  background-color: #2b1881;
+  .shop {
+    stroke: #009faf;
+    stroke-linejoin: round;
+    stroke-width: 15px;
+    .shelves {
+      fill: #332c8a;
+    }
+    .dark {
+      fill: #2b1881;
+    }
+    .light {
+      fill: #332c8a;
+    }
+    .no-fill {
+      fill: none;
+    }
   }
 }

@@ -1,0 +1,60 @@
+.placeholder {
+  z-index: -1;
+  img {
+    max-width: 100%;
+  }
+}
+
+.smoke {
+  display: none;
+
+}
+
+.gacha {
+  display: none;
+
+}
+
+.coins {
+  display: none;
+
+  .main-coin {
+
+  }
+  .coin-stack {
+
+  }
+
+}
+
+.search-glass {
+  display: none;
+
+}
+
+.item-chest {
+  display: none;
+
+}
+
+.chest-key {
+  display: none;
+
+}
+
+.shadows {
+  display: none;
+
+}
+
+.background {
+  display: none;
+
+  height: 100vh;
+  .shop {
+    width: 125%;
+    position: absolute;
+    bottom: 0;
+    left: -13%;
+  }
+}
