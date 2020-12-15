@@ -5,6 +5,10 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: $base-font-size;
 }
 
 main {
@@ -16,6 +20,9 @@ main {
     position: absolute;
     svg {
       display: block;
+    }
+    p {
+      margin: 0;
     }
   }
   @media only screen and (max-width: 880px) {

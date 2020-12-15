@@ -6,50 +6,72 @@
 }
 
 .smoke {
-  display: none;
-
+  &.smoke-1 {
+    max-width: 1825px;
+    top: 3%;
+    left: -5%;
+  }
+  &.smoke-2 {
+    max-width: 1025px;
+    bottom: 25.35%;
+    right: -11%;
+  }
+  &.smoke-3 {
+    max-width: 320px;
+    top: 41%;
+    left: -5%;
+  }
+  &.smoke-4 {
+    max-width: 380px;
+    top: 21.5%;
+    right: 19%;
+  }
 }
 
 .gacha {
-  display: none;
-
+  max-width: 1040px;
+  bottom: 11%;
+  left: 30%;
 }
 
 .coins {
-  display: none;
-
-  .main-coin {
-
+  &.main-coin {
+    max-width: 175px;
+    bottom: 10%;
+    right: 36.3%;
   }
-  .coin-stack {
-
+  &.coin-stack {
+    max-width: 173px;
+    bottom: 10.5%;
+    right: 34%;
   }
-
 }
 
 .search-glass {
-  display: none;
-
+  max-width: 830px;
+  bottom: 10.2%;
+  left: 11.25%;
 }
 
 .item-chest {
-  display: none;
-
+  max-width: 805px;
+  bottom: 12.3%;
+  right: 11.5%;
 }
 
 .chest-key {
-  display: none;
-
+  max-width: 250px;
+  bottom: 10.5%;
+  right: 7.75%;
 }
 
 .shadows {
-  display: none;
-
+  max-width: 2360px;
+  bottom: 7%;
+  left: 11%;
 }
 
 .background {
-  display: none;
-
   height: 100vh;
   .shop {
     width: 125%;

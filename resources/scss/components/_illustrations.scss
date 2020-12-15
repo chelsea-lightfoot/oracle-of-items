@@ -4,27 +4,37 @@
 //  2. replace "url(#a) from defs with radial gradient
 //  3. transfer all colors into variables
 //  4. transfer stroke miter and width to variables
-//  5. simplify classes: merge shadows and shading
 
+//I need to move this
+.title {
+  width: 15%;
+  left: 7.5%;
+  top: 10%;
 
-.smoke {
-  fill: #e9e0ff;
-  &.smoke-1 {
-    max-width: 1823px;
+  color: #2b1881;
+  .leadin {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 2.2em;
   }
-  &.smoke-2 {
-    max-width: 1024px;
-  }
-  &.smoke-3 {
-    max-width: 326px;
-  }
-  &.smoke-4 {
-    max-width: 384px;
+  .name {
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+    font-size: 7em;
+    line-height: 1.2em;
   }
 }
 
+.smoke {
+  fill: #e9e0ff;
+  &.smoke-1 {}
+  &.smoke-2 {}
+  &.smoke-3 {}
+  &.smoke-4 {}
+}
+
 .gacha {
-  max-width: 1000px;
   .crystal-ball {
     .ball-back {
       fill: #7ae6d6;
@@ -184,8 +194,7 @@
 }
 
 .coins {
-  .main-coin {
-    max-width: 470px;
+  &.main-coin {
     .edge {
       fill: #fdd761;
     }
@@ -243,8 +252,7 @@
       .twenty {display: none;}
     }
   }
-  .coin-stack {
-    max-width: 470px;
+  &.coin-stack {
     .coin {
       fill: #f6970e;
     }
@@ -331,7 +339,6 @@
 }
 
 .item-chest {
-  max-width: 1000px;
   .lid {
     .divider {
       fill: #962faf;
@@ -415,7 +422,6 @@
 }
 
 .chest-key {
-  max-width: 470px;
   .key {
     fill: #fdd761;
   }
@@ -425,7 +431,6 @@
 }
 
 .shadows {
-  max-width: 5780px;
   fill: #19122f;
   opacity: 0.2;
   .dark {
