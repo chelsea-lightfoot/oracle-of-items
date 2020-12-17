@@ -5,33 +5,23 @@
 //  3. transfer all colors into variables
 //  4. transfer stroke miter and width to variables
 
-//I need to move this
 .title {
-  width: 15%;
-  left: 7.5%;
-  top: 10%;
+  fill: #2b1881;
+  .leadin { }
+  .name { }
+}
 
-  color: #2b1881;
-  .leadin {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 3em;
-    line-height: 2.2em;
-  }
-  .name {
-    font-family: 'EB Garamond', serif;
-    font-weight: 800;
-    font-size: 7em;
-    line-height: 1.2em;
-  }
+.item-shop {
+  margin-top: -40px;
+  background-color: #2b1881;
 }
 
 .smoke {
   fill: #e9e0ff;
-  &.smoke-1 {}
-  &.smoke-2 {}
-  &.smoke-3 {}
-  &.smoke-4 {}
+  .smoke-1 {opacity:0.95;}
+  .smoke-2 {opacity:0.6;}
+  .smoke-3 {opacity:0.6;}
+  .smoke-4 {opacity:0.6;}
 }
 
 .gacha {
@@ -65,7 +55,7 @@
       stroke: #7ae6d6;
       stroke-miterlimit: 10;
       stroke-width: 15px;
-      fill: url(#a); //this is where I need to put the radial gradient
+      fill: url(#b); //this is where I need to put the radial gradient
     }
   }
 
@@ -193,8 +183,7 @@
   }
 }
 
-.coins {
-  &.main-coin {
+.main-coin {
     .edge {
       fill: #fdd761;
     }
@@ -225,6 +214,8 @@
     .numbers {
       path, rect {
         fill: #f9b424;
+
+        //----Increase weight------
         //stroke: #f9b424;
         //stroke-linecap: round;
         //stroke-linejoin: round;
@@ -252,18 +243,19 @@
       .twenty {display: none;}
     }
   }
-  &.coin-stack {
-    .coin {
+
+.coin-stack {
+  .coin {
+    .shadow {
       fill: #f6970e;
     }
-    .shadow {
+    .edge {
       fill: #f9b424;
     }
     .ridge {
       fill: #fdd761;
       opacity: 0.4;
     }
-
   }
 }
 
@@ -310,7 +302,7 @@
   }
   .lens-gradient {
     fill-opacity: 0.7000000000000001;
-    fill: url(#a);
+    fill: url(#c);
   }
   .rim {
     fill: none;
@@ -326,7 +318,7 @@
     fill: #bb50d9;
   }
   .curls {
-    .shadow {
+    .shadows {
       fill: #a642c4;
     }
     .shading {
@@ -433,19 +425,22 @@
 .shadows {
   fill: #19122f;
   opacity: 0.2;
-  .dark {
+  .faded {
     opacity: 0.5;
   }
 }
 
 .background {
-  background-color: #2b1881;
   .shop {
     stroke: #009faf;
     stroke-linejoin: round;
     stroke-width: 15px;
     .shelves {
       fill: #332c8a;
+    }
+    .table {
+      fill: #332c8a;
+      stroke: #332c8a;
     }
     .dark {
       fill: #2b1881;

@@ -6,18 +6,19 @@ body {
   flex-direction: column;
   overflow: hidden;
 
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: $base-font-size;
+  background-color: #332c8a;
 }
 
 main {
   flex: 1;
   max-width: 100vw;
+  display: flex;
+  justify-content: center;
   section {
     width: 100%;
     height: auto;
     position: absolute;
+    max-width: 2800px;
     svg {
       display: block;
     }
