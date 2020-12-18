@@ -11,6 +11,21 @@
   .name { }
 }
 
+.popup {
+  display: flex;
+  .help-text {
+    font-size: 80px;
+    font-family: Montserrat, sans-serif;
+    color: #2b1881;
+    font-weight: 400;
+    text-align: center;
+    background: #e9e0ff;
+    opacity:0.95;
+    padding: 80px;
+    border-radius: 150px;
+  }
+}
+
 .item-shop {
   margin-top: -40px;
   background-color: #2b1881;
